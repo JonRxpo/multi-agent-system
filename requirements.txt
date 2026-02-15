@@ -1,0 +1,13 @@
+langgraph
+langchain
+langchain-anthropic
+langchain-community
+chromadb
+sentence-transformers
+anthropic
+python-dotenv
+pydantic
+streamlit
+tiktoken
+plotly
+pandas

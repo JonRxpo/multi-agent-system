@@ -1,0 +1,222 @@
+[
+  {
+    "test_id": 1,
+    "question": "What are the top 3 risks mentioned in the security assessment?",
+    "category": "factual_retrieval",
+    "output_length": 1281,
+    "citations": [
+      "None (no documents found in knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:21:43.965908",
+    "expected_sources": [
+      "security_risk_assessment.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 2,
+    "question": "What is the budget overrun amount in the Q4 project status?",
+    "category": "factual_retrieval",
+    "output_length": 1055,
+    "citations": [
+      "None (no relevant documents found in knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:22:08.636223",
+    "expected_sources": [
+      "q4_project_status.md"
+    ],
+    "found_expected_sources": false,
+    "expected_answer": "$180K",
+    "answer_found": false
+  },
+  {
+    "test_id": 3,
+    "question": "Who is the owner of the database performance risk?",
+    "category": "factual_retrieval",
+    "output_length": 1616,
+    "citations": [
+      "None (no documents retrieved)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:22:37.797693",
+    "expected_sources": [
+      "q4_project_status.md"
+    ],
+    "found_expected_sources": false,
+    "expected_answer": "Lisa Patel",
+    "answer_found": false
+  },
+  {
+    "test_id": 4,
+    "question": "What AI features are mentioned in the competitive analysis?",
+    "category": "factual_retrieval",
+    "output_length": 1264,
+    "citations": [
+      "None (no documents retrieved)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:23:02.943401",
+    "expected_sources": [
+      "competitive_analysis.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 5,
+    "question": "List all deadlines mentioned in the meeting notes",
+    "category": "extraction",
+    "output_length": 914,
+    "citations": [
+      "None (no documents were retrieved from the knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:23:25.067665",
+    "expected_sources": [
+      "meeting_notes_dec5.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 6,
+    "question": "What is the recommended mitigation for ransomware attacks?",
+    "category": "factual_retrieval",
+    "output_length": 2172,
+    "citations": [
+      "None (no documents found in knowledge base search)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:23:59.351647",
+    "expected_sources": [
+      "security_risk_assessment.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 7,
+    "question": "Compare TaskFlow Pro and AgileSprint pricing",
+    "category": "comparison",
+    "output_length": 1684,
+    "citations": [
+      "None (no relevant documents found in knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:24:27.317154",
+    "expected_sources": [
+      "competitive_analysis.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 8,
+    "question": "What was the team velocity mentioned in the weekly report?",
+    "category": "factual_retrieval",
+    "output_length": 941,
+    "citations": [
+      "None (no documents retrieved from knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:24:52.012822",
+    "expected_sources": [
+      "weekly_report_dec8.md"
+    ],
+    "found_expected_sources": false,
+    "expected_answer": "42 story points",
+    "answer_found": false
+  },
+  {
+    "test_id": 9,
+    "question": "What is the total Year 1 investment required for security mitigations?",
+    "category": "factual_retrieval",
+    "output_length": 1211,
+    "citations": [
+      "None (no documents were retrieved from the knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:25:19.449948",
+    "expected_sources": [
+      "security_risk_assessment.md"
+    ],
+    "found_expected_sources": false,
+    "expected_answer": "$680K",
+    "answer_found": false
+  },
+  {
+    "test_id": 10,
+    "question": "Summarize the Q1 2025 priorities from the meeting notes",
+    "category": "summarization",
+    "output_length": 1484,
+    "citations": [
+      "None available"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:25:46.078104",
+    "expected_sources": [
+      "meeting_notes_dec5.md"
+    ],
+    "found_expected_sources": false
+  },
+  {
+    "test_id": 11,
+    "question": "What is the CEO's name?",
+    "category": "hallucination_check",
+    "output_length": 959,
+    "citations": [
+      "None (no documents were retrieved from the knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:26:09.566170",
+    "correctly_declined": true
+  },
+  {
+    "test_id": 12,
+    "question": "How many employees does the company have?",
+    "category": "hallucination_check",
+    "output_length": 1289,
+    "citations": [
+      "None (no documents retrieved from knowledge base)"
+    ],
+    "has_citations": true,
+    "passed_verification": false,
+    "verification_status": "ISSUES FOUND",
+    "timestamp": "2026-02-10T18:26:33.589615",
+    "correctly_declined": true
+  },
+  {
+    "test_id": 13,
+    "question": "What was the Q3 revenue?",
+    "category": "hallucination_check",
+    "output_length": 1132,
+    "citations": [
+      "None (no documents found in search)"
+    ],
+    "has_citations": true,
+    "passed_verification": true,
+    "verification_status": "PASS",
+    "timestamp": "2026-02-10T18:26:58.749025",
+    "correctly_declined": true
+  }
+]
