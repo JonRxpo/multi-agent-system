@@ -158,28 +158,6 @@ python run_evaluation.py
 
 **Results saved to:** `eval/eval_results_TIMESTAMP.json`
 
-## Deployment
-
-**Streamlit Cloud** (Recommended):
-
-1. Push to GitHub
-2. Deploy on streamlit.io/cloud
-3. Add API key in secrets
-
-**Local Server**:
-
-```bash
-streamlit run app.py --server.port 8501
-```
-
-**Docker**:
-
-```bash
-docker build -t multi-agent-system .
-docker run -p 8501:8501 -e ANTHROPIC_API_KEY=key multi-agent-system
-```
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for full details.
 
 ## Technical Stack
 
@@ -191,96 +169,11 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for full details.
 - **Visualization**: Plotly + Pandas
 - **Language**: Python 3.9+
 
-## Performance
 
-- **First run**: 1-2 minutes (model download + indexing)
-- **Subsequent runs**: 10-30 seconds per task
-- **Documents**: 5 sample docs, 34 chunks indexed
-- **Accuracy**: 90%+ verification pass rate
-- **Multi-output**: ~5-10 seconds additional processing
 
-## Customization
 
-**Add Documents**: Drop files in `/data` folder (supports .md, .txt)
 
-**Modify Agents**: Edit agent prompts in `/agents` folder
 
-**Change Model**: Update model name in agent files:
 
-```python
-model_name: str = "claude-sonnet-4-20250514"
-```
 
-**Adjust Parameters**: Modify temperature, top_k in agent configs
 
-**Custom Logging**: Edit `utils/logger.py` to add custom metrics
-
-## Development Status
-
-**Completed:**
-
-- Core 4-agent system
-- Document retrieval (ChromaDB)
-- Web UI (Streamlit)
-- CLI interface
-- Multi-output mode
-- Observability dashboard
-- Evaluation framework
-- Agent trace logging
-- Citation tracking
-- Hallucination detection
-- Workflow logging
-- Real-time metrics
-
-## Project Timeline
-
-- **Day 1-2**: Core agents + retrieval
-- **Day 3-4**: Web UI + orchestration
-- **Day 5-6**: Evaluation + multi-output + observability
-- **Day 7**: Documentation + deployment
-
-## Acceptance Criteria
-
-- Multi-agent routing works (planner → research → writer → verifier)
-- Final output is grounded with citations
-- Verifier catches missing evidence and enforces "I don't know"
-- Trace/logs clearly show agent actions
-- App runs end-to-end with easy setup
-- Multi-output mode generates 3 formats
-- Observability dashboard tracks metrics
-
-## Files Delivered
-
-**Required:**
-
-- README.md
-- requirements.txt
-- /app (Streamlit UI)
-- /agents (4 agents + multi-output)
-- /data (5 sample documents)
-- /eval (test framework)
-
-**Bonus:**
-
-- Observability dashboard
-- Multi-output mode
-- Workflow logging
-- Deployment guides
-
-## License
-
-Educational project - Giga Academy 2025
-
-## Author
-
-Jon - Giga Academy Cohort IV
-
-Built for Project #5: Agentic Research & Action Assistant
-
-## Repository
-
-GitHub: [Your repo URL here]
-
-## Demo
-
-Live Demo: [Your Streamlit Cloud URL here]
