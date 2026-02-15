@@ -25,24 +25,19 @@ wheels/
 .env
 .venv
 
-# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Chroma DB
 chroma_db/
 *.db
 
-# Logs
 *.log
 logs/
 
-# OS
 .DS_Store
 Thumbs.db
 
-# Streamlit
 .streamlit/secrets.toml
